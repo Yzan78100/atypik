@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {NgbRatingConfig} from '@ng-bootstrap/ng-bootstrap';
 import {ConfigService} from '../config.service';
-import {Observable} from 'rxjs';
+import {Observable} from 'rxjs/Observable';
 import  {Logements} from "../models/logement";
 let lot : any[] = [
 ];
@@ -12,7 +12,7 @@ let lot : any[] = [
 	styleUrls: ['./logement.component.css'],
 	providers: [NgbRatingConfig, ConfigService]
 })
-export class LogementComponent {
+export class LogementComponent implements OnInit {
 
 Datalot : Logements[];
 logement: Logements;
@@ -24,31 +24,29 @@ logement: Logements;
 		config.max = 5;
 		config.readonly = true;
 		this.Datalot = [];
-		this.getLotData();
+
 		console.log('toto');
 	}
 
-
+  ngOnInit() {
+  this.getLotData();
+}
 
 
 	getLotData(): Observable<any[]> {
-		console.log('bondamamao');
 
     return Observable.create(observer => {
 		console.log('toti');
 		this.configService.getlotData().subscribe(datalot => {
-
 			console.log(datalot);
-
-          observer.next(this.Datalot);
+          observer.next('ok');
         }, error => {
-
+		  console.log(error);
           if (error._body)
-            observer.next(JSON.parse(error._body));
+            observer.error(JSON.parse(error._body));
           else
             observer.next(JSON.parse(error));
         });
-
     });
   }
 

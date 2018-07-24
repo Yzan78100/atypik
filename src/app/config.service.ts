@@ -6,15 +6,16 @@ import {Logements} from './models/logement';
   providedIn: 'root'
 })
 export class ConfigService {
-logement: Logements;
+
 
 
 
 constructor(private http: HttpClient) { }
 
   getlotData() {
-    let configUrl = 'assets/data/lot.json';
+  console.log('ok');
+    const configUrl = 'assets/data/lot.json';
     return this.http
-    .get(configUrl)
+    .get(configUrl);
   }
 }
