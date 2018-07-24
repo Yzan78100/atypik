@@ -1,0 +1,21 @@
+.image-liste {
+	width: 100%;
+}
+
+.div-liste h5 {
+	text-transform: uppercase;
+}
+
+.etoile-note {
+	width: 10px;
+}
+
+.div-liste h6 {
+	text-transform: uppercase;
+	color: #8e8e8e;
+}
+
+.div-liste .prix {
+	color: #939393;
+	text-transform: uppercase;
+}

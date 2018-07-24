@@ -1,0 +1,171 @@
+.block-bizarre {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.texte-bizarre {
+	font-size: 21px;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+
+.block-team-member {
+	height: 200px;
+	padding: 0;
+}
+
+.block-team-member .main-container {
+	height: 100%;
+	padding:0;
+	display:flex;
+}
+
+.block-team-member .main-container .container1 {
+	width:calc(100% / 5);
+	height: 100%;
+	position:relative;
+}
+
+.block-team-member .main-container .container1 .dot1 {
+	background-color: red;
+	border-radius: 50%;
+	height:40px;
+	width:40px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	background: url('/images/personne1.jpg') no-repeat 90% 0%;
+	background-size: cover;
+	box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
+
+}
+
+.block-team-member .main-container .container2 {
+	width:calc(100% / 5);
+	height: 100%;
+	position:relative;}
+
+.block-team-member .main-container .container2 .dot2 {
+		background-color: blue;
+		border-radius: 50%;
+		height:40px;
+		width:40px;
+		position:absolute;
+		top:50%;
+		left:50%;
+		transform:translate(-50%, -50%);
+		background: url('/images/personne2.jpg') no-repeat 50% 0%;
+		background-size: cover;
+		box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
+}
+
+
+.block-team-member .main-container .container3 {
+	width:calc(100% / 5);
+	height: 100%;
+	position:relative;}
+
+.block-team-member .main-container .container3 .dot3 {
+	background-color: green;
+	border-radius: 50%;
+	height:80px;
+	width:80px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	background: url('/images/personne3.jpg') no-repeat 50%;
+	background-size: cover;
+	box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
+}
+
+
+.block-team-member .main-container .container4 {
+	width:calc(100% / 5);
+	height: 100%;
+	position:relative;
+}
+
+.block-team-member .main-container .container4 .dot4 {
+	background-color: grey;
+	border-radius: 50%;
+	height:40px;
+	width:40px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	background: url('/images/personne4.jpg') no-repeat 50% 0%;
+	background-size: cover;
+	box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
+}
+
+
+.block-team-member .main-container .container5 {
+	width:calc(100% / 5);
+	height: 100%;
+	position:relative;
+}
+
+.block-team-member .main-container .container5 .dot5 {
+	background-color: purple;
+	border-radius: 50%;
+	height:40px;
+	width:40px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	background: url('/images/personne5.jpeg') no-repeat 50% 0%;
+	background-size: cover;
+	box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
+}
+
+@media only screen and (min-width: 768px) {
+	.block-team-member .main-container .container1 .dot1 {
+		height:60px;
+		width:60px;
+	}
+	.block-team-member .main-container .container2 .dot2 {
+		height:60px;
+		width:60px;
+	}
+	.block-team-member .main-container .container3 .dot3 {
+		height:100px;
+		width:100px;
+	}
+	.block-team-member .main-container .container4 .dot4 {
+		height:60px;
+		width:60px;
+	}
+	.block-team-member .main-container .container5 .dot5 {
+		height:60px;
+		width:60px;
+	}
+}
+
+@media only screen and (min-width: 991px) {
+	.block-team-member .main-container .container1 .dot1 {
+		height:80px;
+		width:80px;
+	}
+	.block-team-member .main-container .container2 .dot2 {
+		height:80px;
+		width:80px;
+	}
+	.block-team-member .main-container .container3 .dot3 {
+		height:120px;
+		width:120px;
+	}
+	.block-team-member .main-container .container4 .dot4 {
+		height:80px;
+		width:80px;
+	}
+	.block-team-member .main-container .container5 .dot5 {
+		height:80px;
+		width:80px;
+	}
+}

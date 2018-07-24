@@ -1,0 +1,18 @@
+.navbar-brand {
+	width: 100px;
+	padding: 10px 15px !important;
+}
+
+.navbar-brand img {
+	width: 150%;
+}
+.dark-modal .modal-content {
+	background-color: #292b2c;
+	color: white;
+}
+.dark-modal .close {
+	color: white;
+}
+.light-blue-backdrop {
+	background-color: #5cb3fd;
+}

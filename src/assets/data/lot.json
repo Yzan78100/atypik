@@ -1,0 +1,86 @@
+[
+	{
+		"image" : "assets/image2.jpg",
+		"name": "Cabane dans les montagne",
+		"ville": "Jura",
+		"note": 5,
+		"personnes": 5,
+		"caution": 500,
+		"prix": 257,
+		"tag": "cabane",
+		"description":"abcd...",
+		"commentaire":"efgh..."
+	},
+	{
+		"image":"../image2.jpg" ,
+		"name":"Cabane dans les abres",
+		"ville":"Paris",
+		"note":5,
+		"personnes":5,
+		"caution": 500,
+		"prix":257,
+		"tag":"cabane",
+		"description":"abcd...",
+		"commentaire":"efgh..."
+	},
+	{
+		"image":"assets/image2.jpg" ,
+		"name":"Cabane dans la prairie",
+		"ville":"Marseille",
+		"note":5,
+		"personnes":4,
+		"caution": 500,
+		"prix":257,
+		"tag":"tippie",
+		"description":"abcd...",
+		"commentaire":"efgh..."
+	},
+	{
+		"image":"assets/image2.jpg" ,
+		"name":"Cabane dans les abres",
+		"ville":"Lyon",
+		"note":5,
+		"personnes":5,
+		"caution": 500,
+		"prix":257,
+		"tag":"maison",
+		"description":"abcd...",
+		"commentaire":"efgh..."
+	},
+	{
+		"image":"assets/image2.jpg" ,
+		"name":"bulle dans les bois",
+		"ville":"Montpelier",
+		"note":5,
+		"personnes":7,
+		"caution": 500,
+		"prix":257,
+		"tag":"bulle",
+		"description":"abcd...",
+		"commentaire":"efgh..."
+	},
+	{
+		"image":"assets/image2.jpg" ,
+		"name":"Cabane dans les abres",
+		"ville":"Toulouse",
+		"note":5,
+		"personnes":2,
+		"caution": 500,
+		"prix":257,
+		"tag":"tente",
+		"description":"abcd...",
+		"commentaire":"efgh..."
+	},
+	{
+		"image":"assets/image2.jpg" ,
+		"name":"maison dans les abres",
+		"ville":"Nantes",
+		"note":4,
+		"personnes":1,
+		"caution": 500,
+		"prix":257,
+		"tag":"maison",
+		"description":"abcd...",
+		"commentaire":"efgh..."
+	}
+]

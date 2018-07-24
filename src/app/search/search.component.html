@@ -1,0 +1,15 @@
+<div class="barre-de-recherche">
+	<img src="assets/Tipi.jpg">
+	<div class="container">
+		<div class="titre-recherche">
+			<h1 class="titre-recherche2">Rechercher le logement Atypik qui vous correspond</h1>
+
+	    	<div class="input-group">
+	      		<input id="typeahead-format" type="text" class="form-control" [(ngModel)]="model" [ngbTypeahead]="search" [resultFormatter]="formatter"  placeholder="tente, bulle..." />
+	     		<span class="input-group-btn">
+	       			<button class="btn btn-default" type="button">Rechercher</button>
+	      		</span>
+	    	</div>
+	 	</div>
+	</div>
+</div>

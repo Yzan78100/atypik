@@ -1,0 +1,20 @@
+.encadre {
+	padding: 10px 10px;
+	padding-right: 5px !important;
+	padding-left:  5px !important;
+}
+
+.encadre img {
+	filter:  contrast(50%);
+}
+
+.encadre span {
+	color: white;
+	font-size: 45px;
+}
+.sulli {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}

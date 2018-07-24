@@ -1,0 +1,48 @@
+<app-navbar></app-navbar>
+<div class="container">
+  <h1>Création d'un logement</h1>
+  <form>
+    <div class="form-group">
+      <label for="logement">Nom du logement</label>
+      <input type="texte" class="form-control" id="logement" placeholder="Intitulé du logement">
+      <div class="form-group">
+        <label for="categorie">Commencez par choisir une catégorie générale</label>
+        <select class="form-control" id="categorie">
+          <option disabled>Sélectionner une options</option>
+          <option>Maison</option>
+          <option>Cabanne</option>
+          <option>Bulle</option>
+          <option >Tippie</option>
+          <option>Tente</option>
+          <option>Mobil-home</option>
+        </select>
+      </div>
+      <label for="ville">ville</label>
+      <input type="texte" class="form-control" id="ville" placeholder="Entrez votre ville">
+    </div>
+    <div class="form-group">
+      <label for="personne">Nombre de personnes</label>
+      <select multiple class="form-control" id="personne">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+      </select>
+    </div>
+    <label for="caution">Caution</label>
+    <input type="texte" class="form-control" id="caution" placeholder="caution">
+    <label for="tarif">Tarifs</label>
+    <input type="texte" class="form-control" id="tarif" placeholder="prix">
+    <div class="form-group">
+      <label for="description">Descriptions du logements</label>
+      <textarea class="form-control" id="description" rows="3" placeholder="Descriptions..."></textarea>
+    </div>
+    <div class="form-group">
+      <label for="image">Insérer votre image</label>
+      <input type="file" class="form-control-file" id="image">
+    </div>
+  </form>
+</div>
