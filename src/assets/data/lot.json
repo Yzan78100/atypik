@@ -12,7 +12,7 @@
 		"commentaire":"efgh..."
 	},
 	{
-		"image":"../image2.jpg" ,
+		"image":"assets/image2.jpg" ,
 		"name":"Cabane dans les abres",
 		"ville":"Paris",
 		"note":5,
