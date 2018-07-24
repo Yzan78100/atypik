@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule , ReactiveFormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { AppNavbarComponent } from './app-navbar/app-navbar.component';
@@ -27,6 +27,7 @@ import 'mousetrap';
 import {ModalGalleryModule} from '@ks89/angular-modal-gallery';
 import {ConfigService} from './config.service';
 import { CreationComponent } from './creation/creation.component';
+
 
 const appRoutes: Routes = [
   { path: '', component: AcceuilComponent },
@@ -57,6 +58,7 @@ const appRoutes: Routes = [
     CreationComponent
   ],
   imports: [
+    ReactiveFormsModule,
     BrowserModule,
     FormsModule,
     HttpClientModule,

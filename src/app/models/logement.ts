@@ -1,59 +1,125 @@
 export class Logements {
-	private image :string;
-	private name : string;
-	private ville : string;
-	private note : number;
-	private personnes: number;
-	private caution :number;
-	private prix :number;
-	private tag :string;
+
+  private image :string;
+  private _name : string;
+  private _ville : string;
+  private _note : number;
+  private _personnes: number;
+  private _caution :number;
+  private _prix :number;
+  private _tag :string;
+
+
+  get _image(): string {
+    return this.image;
+  }
+
+  set _image(value: string) {
+    this.image = value;
+  }
+
+  get nom(): string {
+    return this._name;
+  }
+
+  set name(value: string) {
+    this._name = value;
+  }
+
+  get ville(): string {
+    return this._ville;
+  }
+
+  set ville(value: string) {
+    this._ville = value;
+  }
+
+  get note(): number {
+    return this._note;
+  }
+
+  set note(value: number) {
+    this._note = value;
+  }
+
+  get personnes(): number {
+    return this._personnes;
+  }
+
+  set personnes(value: number) {
+    this._personnes = value;
+  }
+
+  get caution(): number {
+    return this._caution;
+  }
+
+  set caution(value: number) {
+    this._caution = value;
+  }
+
+  get prix(): number {
+    return this._prix;
+  }
+
+  set prix(value: number) {
+    this._prix = value;
+  }
+
+  get tag(): string {
+    return this._tag;
+  }
+
+  set tag(value: string) {
+    this._tag = value;
+  }
 
 	public getImage(){
-		return this.image;
+		return this._image;
 	}
 	public setImage(img){
-		this.image = img;
+		this._image = img;
 	}
 	public getName(){
-		return this.name;
+		return this._name;
 	}
 	public setName(name){
-		this.name = name;
+		this._name = name;
 	}
 	public getVille(){
-		return this.ville;
+		return this._ville;
 	}
 	public setVille(ville){
-		this.ville = ville;
+		this._ville = ville;
 	}
 	public getNote(){
-		return this.note;
+		return this._note;
 	}
 	public setNote(note){
-		this.note = note;
+		this._note = note;
 	}
 	public getPersonnes(){
-		return this.personnes;
+		return this._personnes;
 	}
 	public setPersonnes(personne){
-		this.personnes = personne;
+		this._personnes = personne;
 	}
 	public getCaution(){
-		return this.caution;
+		return this._caution;
 	}
 	public setCaution(caution){
-		this.caution = caution;
+		this._caution = caution;
 	}
 	public getPrix(){
-		return this.prix;
+		return this._prix;
 	}
 	public setPrix(prix){
-		this.prix = prix;
+		this._prix = prix;
 	}
 	public getTag(){
-		return this.tag;
+		return this._tag;
 	}
 	public setTag(tag){
-		this.tag = tag;
+		this._tag = tag;
 	}
 }
