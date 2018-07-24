@@ -2,6 +2,16 @@
 <div class="descriptionImg">
 	<button id="images"class="btn btn-dark" type="button" (click)="openModal()">Voir plus d'images</button>
 </div>
-<app-details></app-details>
-<ks-modal-gallery [id]="3" [modalImages]="imagesRect"
-                    [plainGalleryConfig]="plainGalleryRowATags"></ks-modal-gallery>
+<div class="container" style="position:relative">
+	<div class="row" style="max-width:48%;">
+		<h2>Dans ma bulle</h2>
+		<p>
+			<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, tenetur laboriosam qui, cupiditate aut aliquid. Alias aut, nihil, quae quaerat fuga suscipit magnam fugiat molestiae iure inventore hic tempore ea.
+			</span>
+			<span>Doloremque dolores temporibus vero quisquam cumque perferendis provident reiciendis. Aliquam, nihil architecto soluta eligendi ea cupiditate pariatur dolore expedita delectus id sed quo perferendis, commodi illo deleniti placeat ipsa non.
+			</span>
+		</p>
+	</div>
+	<app-details style="width:49%;position:absolute;top:0;left:50%;"></app-details>
+	<button class="btn btn-dark" type="button" (click)="openModal()">Réserver</button>
+</div>
