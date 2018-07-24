@@ -14,7 +14,7 @@ constructor(private http: HttpClient) { }
 
   getlotData() {
   console.log('ok');
-    const configUrl = 'assets/data/lot.json';
+    const configUrl = 'http://api.luggfly.com/api/logements';
     return this.http
     .get(configUrl);
   }
