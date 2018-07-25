@@ -24,22 +24,19 @@ logement: Logements;
 		config.max = 5;
 		config.readonly = true;
 		this.Datalot = [];
-
-		console.log('toto');
 	}
 
   ngOnInit() {
-  this.getLotData();
+  this.getLotData().subscribe( res => {
+   this.Datalot = res;
+  });
 }
 
 
 	getLotData(): Observable<any[]> {
-
     return Observable.create(observer => {
-		console.log('toti');
-		this.configService.getlotData().subscribe(datalot => {
-			console.log(datalot);
-          observer.next('ok');
+		this.configService.getlotData('http://api.luggfly.com/api/logements').subscribe(datalot => {
+          observer.next(datalot);
         }, error => {
 		  console.log(error);
           if (error._body)

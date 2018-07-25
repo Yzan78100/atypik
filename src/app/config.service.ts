@@ -12,10 +12,16 @@ export class ConfigService {
 
 constructor(private http: HttpClient) { }
 
-  getlotData() {
+  getlotData(configUrl) {
   console.log('ok');
     const configUrl = 'http://api.luggfly.com/api/logements';
     return this.http
     .get(configUrl);
+  }
+
+
+  postData(configUrl, data) {
+    return this.http
+      .post(configUrl, data);
   }
 }
