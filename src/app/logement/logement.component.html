@@ -1,8 +1,8 @@
 <div class="container">
 	<div class="row">
 		<div  *ngFor="let data of Datalot" class="col-lg-4 col-md-4 col-sm-6 col-xs-12 div-liste">
-			<img src="assets/image2.jpg" class="image-liste">
-			<h5>{{data.name}}</h5>
+			<img src={{data.image}} class="image-liste">
+			<h5>{{data.nom}}</h5>
 			<ngb-rating [rate]="data.note"></ngb-rating>
 			<h6>{{data.personnes}} Personnes - Caution : {{data.caution}}€</h6>
 			<h5 class="prix">{{data.prix}}€ par nuit</h5>

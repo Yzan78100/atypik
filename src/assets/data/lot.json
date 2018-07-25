@@ -1,7 +1,7 @@
 [
 	{
 		"image" : "assets/image2.jpg",
-		"name": "Cabane dans les montagne",
+		"nom": "Cabane dans les montagne",
 		"ville": "Jura",
 		"note": 5,
 		"personnes": 5,
@@ -13,7 +13,7 @@
 	},
 	{
 		"image":"assets/image2.jpg" ,
-		"name":"Cabane dans les abres",
+		"nom":"Cabane dans les abres",
 		"ville":"Paris",
 		"note":5,
 		"personnes":5,
@@ -25,7 +25,7 @@
 	},
 	{
 		"image":"assets/image2.jpg" ,
-		"name":"Cabane dans la prairie",
+		"nom":"Cabane dans la prairie",
 		"ville":"Marseille",
 		"note":5,
 		"personnes":4,
@@ -37,7 +37,7 @@
 	},
 	{
 		"image":"assets/image2.jpg" ,
-		"name":"Cabane dans les abres",
+		"nom":"Cabane dans les abres",
 		"ville":"Lyon",
 		"note":5,
 		"personnes":5,
@@ -49,7 +49,7 @@
 	},
 	{
 		"image":"assets/image2.jpg" ,
-		"name":"bulle dans les bois",
+		"nom":"bulle dans les bois",
 		"ville":"Montpelier",
 		"note":5,
 		"personnes":7,
@@ -61,7 +61,7 @@
 	},
 	{
 		"image":"assets/image2.jpg" ,
-		"name":"Cabane dans les abres",
+		"nom":"Cabane dans les abres",
 		"ville":"Toulouse",
 		"note":5,
 		"personnes":2,
@@ -73,7 +73,7 @@
 	},
 	{
 		"image":"assets/image2.jpg" ,
-		"name":"maison dans les abres",
+		"nom":"maison dans les abres",
 		"ville":"Nantes",
 		"note":4,
 		"personnes":1,

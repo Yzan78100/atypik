@@ -1,6 +1,7 @@
 export class Logements {
 
-  private image :string;
+
+  private _image :string;
   private _name : string;
   private _ville : string;
   private _note : number;
@@ -9,14 +10,15 @@ export class Logements {
   private _prix :number;
   private _tag :string;
 
-
-  get _image(): string {
-    return this.image;
+  get image(): string {
+    return this._image;
   }
 
-  set _image(value: string) {
-    this.image = value;
+  set image(value: string) {
+    this._image = value;
   }
+
+
 
   get nom(): string {
     return this._name;
