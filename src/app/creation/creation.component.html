@@ -1,48 +1,61 @@
 <app-navbar></app-navbar>
 <div class="container">
   <h1>Création d'un logement</h1>
-  <form>
-    <div class="form-group">
-      <label for="logement">Nom du logement</label>
-      <input type="texte" class="form-control" id="logement" placeholder="Intitulé du logement">
-      <div class="form-group">
-        <label for="categorie">Commencez par choisir une catégorie générale</label>
-        <select class="form-control" id="categorie">
+  <form (ngSubmit)="signUp()" [formGroup]="userForm">
+    <div class="form-row">
+      <div class="form-group col-md-12">
+        <label for="inputlogement">Nom du logement</label>
+        <input type="text" class="form-control" id="inputlogement" placeholder="Intitulé du logement" formControlName="nom">
+      </div>
+      <div class="form-group col-md-12">
+        <label for="inputOption">Commencez par choisir une catégorie générale</label>
+        <select id="inputOption" class="form-control" formControlName="tag">
           <option disabled>Sélectionner une options</option>
           <option>Maison</option>
           <option>Cabanne</option>
           <option>Bulle</option>
-          <option >Tippie</option>
+          <option>Tippie</option>
           <option>Tente</option>
           <option>Mobil-home</option>
         </select>
       </div>
-      <label for="ville">ville</label>
-      <input type="texte" class="form-control" id="ville" placeholder="Entrez votre ville">
+      <div class="form-group col-md-12">
+        <label for="inputCity">Ville</label>
+        <input type="text" class="form-control" id="inputCity" placeholder="ville"
+        formControlName="ville">
+      </div>
+      <div class="form-group col-md-12">
+        <label for="inputPersonne">Nombre de personnes</label>
+        <select  id="inputPersonne" class="form-control" formControlName="personnes">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+        </select>
+      </div>
+      <div class="form-group col-md-12">
+        <label for="inputCaution">Caution</label>
+        <input type="text" class="form-control" id="inputCaution" placeholder="caution" formControlName="caution">
+      </div>
+      <div class="form-group col-md-12">
+        <label for="inputTarifs">Tarifs</label>
+        <input type="text" class="form-control" id="inputTarifs" placeholder="prix" formControlName="prix">
+      </div>
+      <div class="form-group col-md-12">
+        <label for="inputDescription">Descriptions du logements</label>
+        <textarea class="form-control" id="inputDescription" rows="3" placeholder="descriptions..." formControlName="description"></textarea>
+      </div>
+      <div class="form-group col-md-12">
+        <label for="inputImage">Insérer votre image</label>
+        <input type="file" class="form-control-file" id="inputImage"
+        formControlName="image">
+      </div>
     </div>
-    <div class="form-group">
-      <label for="personne">Nombre de personnes</label>
-      <select multiple class="form-control" id="personne">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>6</option>
-        <option>7</option>
-        <option>8</option>
-      </select>
-    </div>
-    <label for="caution">Caution</label>
-    <input type="texte" class="form-control" id="caution" placeholder="caution">
-    <label for="tarif">Tarifs</label>
-    <input type="texte" class="form-control" id="tarif" placeholder="prix">
-    <div class="form-group">
-      <label for="description">Descriptions du logements</label>
-      <textarea class="form-control" id="description" rows="3" placeholder="Descriptions..."></textarea>
-    </div>
-    <div class="form-group">
-      <label for="image">Insérer votre image</label>
-      <input type="file" class="form-control-file" id="image">
+    <div class="form-group col-md-12">
+    <button type="submit" class="btn btn-primary">Valider</button>
     </div>
   </form>
 </div>
